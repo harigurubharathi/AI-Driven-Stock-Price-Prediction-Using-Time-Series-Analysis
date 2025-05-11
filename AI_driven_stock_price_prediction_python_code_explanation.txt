@@ -1,0 +1,10 @@
+1. Import Libraries:
+Imports necessary libraries like pandas, numpy, scikit-learn, TensorFlow, and matplotlib.
+2. Load Data:
+Loads stock data from a CSV file (replace 'your_stock_data.csv' with your actual file). It assumes the first column is a date and parses it accordingly.
+3. Prepare Data:
+Calculates mid-prices (average of high and low) for simplicity. You can adapt this to use other features.
+Splits the data into training and testing sets.
+Scales the data using MinMaxScaler to normalize values between 0 and 1. This is crucial for LSTM performance.
+Creates sequences of data using the create_sequences function. This prepares the data for the LSTM model.
+Reshapes the data into the required format (samples, time steps, features) for the LSTM.
